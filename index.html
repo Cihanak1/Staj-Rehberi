@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="description" content="Zorunlu staj süreci için detaylı evrak rehberi ve yol haritası">
+    <meta name="theme-color" content="#143264" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Zorunlu Staj Süreci Yol Haritası | Detaylı Evrak Rehberi</title>
+    
+    <!-- Font Preconnect & Load (Performance Optimized) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="css/variables.css" as="style">
+    <link rel="preload" href="css/base.css" as="style">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive-utilities.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Zorunlu Staj Yol Haritası</h1>
+            <p class="subtitle">Hangi evrakın nereye verileceğini, kaç adet çıkarılacağını ve staj adımlarını detaylandıran rehber.</p>
+        </header>
+
+        <div class="timeline" id="timeline-container" role="region" aria-label="Staj süreci adımları">
+        </div>
+
+        <div class="alert-box" id="alert-box" role="alert" aria-live="polite">
+            <i class="ph-fill ph-warning-octagon alert-icon" aria-hidden="true"></i>
+            <div>
+                <h3 class="alert-title">Kesinti ve İptal Durumları Hakkında Çok Önemli Uyarı</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Staj başlangıç tarihinde mücbir bir sebep olmaksızın staja başlamazsanız ya da staj döneminde herhangi bir sebeple stajı yarıda bırakmak zorunda kalırsanız; bu durumu derhal, hiç vakit kaybetmeden <strong>EK-3 dilekçesi</strong> ile Meslek Yüksekokulu Müdürlüğüne yazılı olarak bildirmekle yükümlüsünüz. Aksi takdirde doğacak cezai SGK kesintilerinden ve prim borçlarından öğrenci sorumlu tutulacaktır.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modular JavaScript (ESM) -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

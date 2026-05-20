@@ -1,0 +1,56 @@
+/* =========================================
+   CSS DEĞİŞKENLERİ & TEMA SİSTEMİ
+   ========================================= */
+:root {
+    /* Light Theme (Varsayılan) */
+    --bg-color: #f4f7f6;
+    --bg-gradient: radial-gradient(circle at 15% 50%, rgba(20, 50, 100, 0.05), transparent 25%),
+                   radial-gradient(circle at 85% 30%, rgba(180, 20, 30, 0.05), transparent 25%);
+    --surface: rgba(255, 255, 255, 0.7);
+    --surface-hover: rgba(255, 255, 255, 0.95);
+    --border: rgba(255, 255, 255, 0.5);
+    --text-main: #1a1a2e;
+    --text-muted: #596275;
+    --primary: #143264; /* SDU Lacivert */
+    --secondary: #b4141e; /* SDU Kırmızı */
+    --timeline-line: #d1d8e0;
+    --alert-bg: rgba(180, 20, 30, 0.08);
+    --alert-border: rgba(180, 20, 30, 0.2);
+    --shadow: 0 10px 40px -10px rgba(31, 38, 135, 0.1);
+    
+    /* Etiket Renkleri */
+    --tag-school-bg: rgba(20, 50, 100, 0.1);
+    --tag-school-text: #143264;
+    --tag-hospital-bg: rgba(0, 150, 136, 0.1);
+    --tag-hospital-text: #00796b;
+    --tag-action-bg: rgba(255, 152, 0, 0.1);
+    --tag-action-text: #e65100;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark Theme - AMOLED Optimized */
+        --bg-color: #000000; /* Pure black for AMOLED power saving */
+        --bg-gradient: radial-gradient(circle at 15% 50%, rgba(20, 50, 100, 0.2), transparent 25%),
+                       radial-gradient(circle at 85% 30%, rgba(180, 20, 30, 0.2), transparent 25%);
+        --surface: rgba(20, 25, 35, 0.7);
+        --surface-hover: rgba(30, 35, 50, 0.95);
+        --border: rgba(255, 255, 255, 0.08);
+        --text-main: #f8f9fa;
+        --text-muted: #b0b8c1;
+        --primary: #6c9eff;
+        --secondary: #ff5770;
+        --timeline-line: #2a2f3a;
+        --alert-bg: rgba(255, 71, 87, 0.12);
+        --alert-border: rgba(255, 71, 87, 0.25);
+        --shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.6);
+        
+        /* Etiket Renkleri Dark - AMOLED için daha parlak */
+        --tag-school-bg: rgba(108, 158, 255, 0.18);
+        --tag-school-text: #9dbfff;
+        --tag-hospital-bg: rgba(38, 166, 154, 0.18);
+        --tag-hospital-text: #8dd4cc;
+        --tag-action-bg: rgba(255, 167, 38, 0.18);
+        --tag-action-text: #ffc266;
+    }
+}

@@ -1,0 +1,148 @@
+/* =========================================
+   RESPONSİVE YARDIMCI SINIFLAR
+   ========================================= */
+
+/* Redmi Note 12 Pro 5G Optimizasyonu (1080x2400, 6.67") */
+@media (min-width: 393px) and (max-width: 430px) and (min-height: 850px) {
+    body {
+        font-size: 16px; /* AMOLED ekran için optimize */
+    }
+    
+    .container {
+        padding: 1.75rem 1.15rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+    }
+    
+    .subtitle {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+    
+    .step-card {
+        padding: 1.35rem;
+        border-radius: 15px;
+        /* AMOLED için daha derin gölge */
+        box-shadow: 0 8px 32px -8px rgba(31, 38, 135, 0.15);
+    }
+    
+    .step-title {
+        font-size: 1.15rem;
+        line-height: 1.45;
+    }
+    
+    .step-content {
+        font-size: 0.98rem;
+        line-height: 1.65;
+    }
+    
+    .doc-title {
+        font-size: 0.97rem;
+    }
+    
+    .doc-desc {
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+    
+    /* Redmi'nin yüksek refresh rate için smooth scroll */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .step-container {
+        margin-bottom: 2.25rem;
+    }
+    
+    /* AMOLED ekran için kontrast artırma */
+    .step-list li {
+        background: rgba(0,0,0,0.03);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+}
+
+/* Touch device optimizasyonları */
+@media (hover: none) and (pointer: coarse) {
+    /* Mobil cihazlarda daha büyük dokunma alanları */
+    .step-container {
+        min-height: 44px; /* iOS minimum touch target */
+    }
+    
+    .step-card {
+        /* Mobilde hover efektlerini kaldır */
+        transform: none !important;
+    }
+    
+    /* Tap highlight rengini özelleştir */
+    * {
+        -webkit-tap-highlight-color: rgba(20, 50, 100, 0.1);
+    }
+    
+    /* Android için smooth scrolling */
+    body {
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-y: contain;
+    }
+}
+
+/* Landscape orientation optimizasyonları */
+@media (max-width: 900px) and (orientation: landscape) {
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .step-container {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Print stilleri */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .step-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .step-icon {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    .alert-box {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* High contrast mode desteği */
+@media (prefers-contrast: high) {
+    .step-card {
+        border: 2px solid var(--text-main);
+    }
+    
+    .step-icon {
+        border-width: 3px;
+    }
+}
+
+/* Büyük ekranlar için maksimum genişlik */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1100px;
+    }
+}

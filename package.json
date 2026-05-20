@@ -1,0 +1,17 @@
+{
+  "name": "staj-rehberi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Zorunlu staj süreci için detaylı evrak rehberi ve yol haritası",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["staj", "rehber", "evrak", "yol-haritası"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
